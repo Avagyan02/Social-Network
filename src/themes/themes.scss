@@ -1,1 +1,21 @@
-// all of the themes should be defined/imported here
+@use '@angular/material'as mat;
+
+@import "./default-theme-colors.scss";
+
+// Default theme
+$default-primary: mat.define-palette($default-theme-primary-color, 500);
+$default-accent: mat.define-palette($default-theme-accent-color, 500);
+$default-warn: mat.define-palette($default-theme-warn-color, 500);
+
+$default-theme: mat.define-light-theme((
+  color: (
+    primary: $default-primary,
+    accent: $default-accent,
+    warn: $default-warn
+  ),
+));
+
+.default-theme {
+  @include mat.all-component-themes($default-theme);
+
+}

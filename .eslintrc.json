@@ -1,0 +1,73 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "plugin:prettier/recommended"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "@typescript-eslint/no-empty-function": "off",
+        "no-console": "off",
+        "consistent-return": "off",
+        "no-underscore-dangle": "off",
+        "max-len": "off",
+        "no-plusplus": "off",
+        "import/prefer-default-export": "off",
+        "no-unused-vars": "off",
+        "no-else-return": "off",
+        "no-use-before-define": "off",
+        "import/named": "off",
+        "import/extensions": "off",
+        "no-mixed-operators": "off",
+        "array-callback-return": "off",
+        "quotes": "off",
+        "no-return-assign": "off",
+        "dot-notation": "off",
+        "no-dupe-keys": "off",
+        "prefer-destructuring": "off",
+        "no-param-reassign": "off",
+        "no-case-declarations": "off",
+        "object-shorthand": "off",
+        "arrow-body-style": "off",
+        "default-case": "off",
+        "one-var-declaration-per-line": "off",
+        "one-var": "off"
+      }
+    },
+    { "files": ["*.html"], "extends": [ "plugin:@angular-eslint/template/recommended" ] }
+  ]
+}
