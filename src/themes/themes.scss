@@ -4,7 +4,7 @@
 
 // Default theme
 $default-primary: mat.define-palette($default-theme-primary-color, 500);
-$default-accent: mat.define-palette($default-theme-accent-color, 500);
+$default-accent: mat.define-palette($default-theme-accent-color, 500, A100, A400, 100);
 $default-warn: mat.define-palette($default-theme-warn-color, 500);
 
 $default-theme: mat.define-light-theme((
@@ -18,4 +18,6 @@ $default-theme: mat.define-light-theme((
 .default-theme {
   @include mat.all-component-themes($default-theme);
 
+  --primaryColor: #{mat.get-color-from-palette($default-primary)};
+  --accentColor: #{mat.get-color-from-palette($default-accent)}
 }

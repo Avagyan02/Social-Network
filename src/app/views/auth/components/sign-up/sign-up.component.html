@@ -1,0 +1,44 @@
+<app-auth-container>
+  <div class="sign-up text-center ">
+    <h2>Sign Up</h2>
+  
+    <div class="sign-up-form-container d-flex justify-content-center">
+      <form [formGroup]="signUpForm">
+        <div class="form-field-wrapper">
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field-wrapper">
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field-wrapper">
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field-wrapper">
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field-wrapper">
+          <mat-form-field>
+            <mat-label>Confirm Password</mat-label>
+            <input matInput formControlName="repeatPassword">
+          </mat-form-field>
+        </div>
+      </form>
+    </div>
+  </div>
+</app-auth-container>

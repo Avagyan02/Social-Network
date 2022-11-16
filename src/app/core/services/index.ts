@@ -1,1 +1,1 @@
-// All of the services should be exported from here
+export * from './images/images.service'

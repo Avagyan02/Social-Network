@@ -35,6 +35,13 @@ $angular-base-project-theme: mat.define-light-theme((
 
 // all of the common scss files should be placed here
 // and should be imported here
+* {
+  box-sizing: border-box;
+}
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.form-field-wrapper {
+  width: 100%;
+}
